@@ -23,8 +23,8 @@ def index():
         ('current_day', current_day),
         ('utc_time', utc_time),
         ('track', track),
-        ('github_file_url', ''),
-        ('github_repo_url', ''),
+        ('github_file_url', 'https://github.com/olumeedee/First-task-hng/blob/main/app.py'),
+        ('github_repo_url', 'https://github.com/olumeedee/First-task-hng.git'),
         ('status_code', 200)
     ])
 

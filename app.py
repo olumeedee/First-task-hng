@@ -18,16 +18,17 @@ def index():
     utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # Create the response data as a dict
-    data = (
-        'slack_name', slack_name,
-        'current_day', current_day,
-        'utc_time', utc_time,
-        'track', track,
-        'github_file_url', 'https://github.com/olumeedee/First-task-hng/blob/main/app.py',
-        'github_repo_url', 'https://github.com/olumeedee/First-task-hng.git',
-        'status_code', 200
-    )
-
+    data = {
+        'slack_name': slack_name,
+        'current_day': current_day,
+        'utc_time': utc_time,
+        'track': track,
+        'github_file_url': 'https://github.com/olumeedee/First-task-hng/blob/main/app.py',
+        'github_repo_url': 'https://github.com/olumeedee/First-task-hng.git',
+        'status_code': "200"
+    } 
+    
+ 
     # turn response into json
     response = jsonify(data)
 

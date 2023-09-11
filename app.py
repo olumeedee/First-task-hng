@@ -17,8 +17,8 @@ def index():
     # Get current UTC time
     utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
 
-    # Create the response data as an OrderedDict
-    data = OrderedDict([
+    # Create the response data as a dict
+    data = ([
         ('slack_name', slack_name),
         ('current_day', current_day),
         ('utc_time', utc_time),

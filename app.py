@@ -25,7 +25,7 @@ def index():
         'track': track,
         'github_file_url': 'https://github.com/olumeedee/First-task-hng/blob/main/app.py',
         'github_repo_url': 'https://github.com/olumeedee/First-task-hng.git',
-        'status_code': "200"
+        'status_code': 200
     } 
     
  
